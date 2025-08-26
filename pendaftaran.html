@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋 Pendaftaran - Gym Management System</title>
+</head>
+<body>
+    <center>
+        <table width="600" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="center">
+                    <h1>🏋️‍♂️ Sistem Gym Kita 💪</h1>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Form Pendaftaran -->
+                    <center>
+                        <h2>📋 Form Pendaftaran Gym</h2>
+                        <p><strong>Yuk gabung bersama kami!</strong><br>
+                        Isi data dengan benar ya. Bidang bertanda <b>*</b> wajib diisi.</p>
+                        <hr>
+                    </center>
+                    
+                    <form action="selamatdatang.html" method="post" autocomplete="on">
+                        <!-- Data Pribadi -->
+                        <center>
+                            <h3>📋 Data Pribadi</h3>
+                        </center>
+                        
+                        <table width="100%" cellpadding="8" cellspacing="5">
+                            <tr>
+                                <td width="200" align="right"><b>Nama Lengkap *</b></td>
+                                <td>
+                                    <input name="nama" type="text" required 
+                                           placeholder="Masukkan nama lengkap Anda" size="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b>No. Telepon *</b></td>
+                                <td>
+                                    <input name="telepon" type="tel" required 
+                                           placeholder="081234567890" size="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b>Email *</b></td>
+                                <td>
+                                    <input name="email" type="email" required 
+                                           placeholder="nama@email.com" size="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b>Tanggal Lahir *</b></td>
+                                <td>
+                                    <input name="tanggal" type="date" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b>Password *</b></td>
+                                <td>
+                                    <input name="password" type="password" required 
+                                           placeholder="Minimal 8 karakter" size="30" minlength="8">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b>Jenis Kelamin *</b></td>
+                                <td>
+                                    <input type="radio" name="gender" value="Laki-laki" required> 👨 Laki-laki
+                                    &nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="gender" value="Perempuan"> 👩 Perempuan
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Alamat -->
+                        <center>
+                            <hr>
+                            <h3>🏠 Alamat</h3>
+                        </center>
+                        
+                        <table width="100%" cellpadding="8" cellspacing="5">
+                            <tr>
+                                <td width="200" align="right" valign="top"><b>Alamat Lengkap *</b></td>
+                                <td>
+                                    <textarea name="alamat" rows="4" cols="35" required
+                                              placeholder="Masukkan alamat lengkap Anda..."></textarea>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Paket Gym -->
+                        <center>
+                            <hr>
+                            <h3>🎯 Paket Gym</h3>
+                        </center>
+                        
+                        <table width="100%" cellpadding="8" cellspacing="5">
+                            <tr>
+                                <td width="200" align="right"><b>Paket Keanggotaan *</b></td>
+                                <td>
+                                    <select name="paket" required>
+                                        <option value="">🎁 -- Pilih Paket Favorit Anda --</option>
+                                        <option value="harian">📅 Harian (Fleksibel)</option>
+                                        <option value="bulanan">📆 Bulanan (Hemat 10%)</option>
+                                        <option value="tahunan">🗓️ Tahunan (Hemat 25%)</option>
+                                        <option value="vip">⭐ VIP All Access (Premium)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><b>Waktu Latihan Favorit</b></td>
+                                <td>
+                                    <select name="jadwal">
+                                        <option value="pagi">🌅 Pagi Hari (06.00 - 10.00)</option>
+                                        <option value="siang">☀️ Siang Hari (10.00 - 15.00)</option>
+                                        <option value="malam">🌙 Malam Hari (15.00 - 21.00)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Persetujuan -->
+                        <center>
+                            <hr>
+                            <h2>✅ Persetujuan</h2>
+                        </center>
+                        <center>
+                            <table width="600" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center">
+                                        <h2>🏋️‍♂️ Syarat & Ketentuan Gym Kita 💪</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- Area Syarat dan Ketentuan -->
+                                        <center>
+                                <br>
+                                            <table cellpadding="15" border="2" bordercolor="#ff6b6b">
+                                                <tr bgcolor="#f0f8ff">
+                                                    <td align="left"
+                                                        <p><big><b>HARAP DIBACA!</b></big></p>
+                                                        <p><font color="blue">Pendaftaran & Keanggotaan<br>
+                    - Member wajib mengisi data dengan benar dan lengkap.<br>
+                    - Keanggotaan bersifat pribadi dan tidak dapat dipindahtangankan.<br>
+                    - Usia minimum pendaftaran adalah 16 tahun.</font></p>
+                                        <p><font color="red">Pembayaran<br>
+                    - Biaya keanggotaan harus dibayar sesuai paket yang dipilih.<br>
+                    - Pembayaran tidak dapat dikembalikan kecuali ada alasan medis yang sah.<br>
+                    - Perpanjangan keanggotaan dilakukan sebelum masa berlaku berakhir.</font></p>
+                                                        <p><font color="green">Penggunaan Fasilitas<br>
+                    - Member wajib menggunakan pakaian dan sepatu olahraga yang sesuai.<br>
+                    - Dilarang merokok atau membawa minuman beralkohol di area gym.<br>
+                    - Peralatan wajib digunakan sesuai aturan dan dikembalikan setelah dipakai.</font></p>
+                                                        <p><font color="purple">Kesehatan & Keselamatan<br>
+                    - Member bertanggung jawab atas kondisi kesehatannya masing-masing.<br>
+                    - Gym tidak bertanggung jawab atas cedera akibat kelalaian member.<br>
+                    - Segera lapor kepada staf jika terjadi kecelakaan.</font></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <br>
+                                            
+                                            <table cellpadding="8" border="1" bordercolor="#ffd93d">
+                                                <tr bgcolor="#fffacd">
+                                                    <td align="center">
+                                                        <p><big><b>Ketentuan Lainnya</b></big></p>
+                                                        <p>Gym berhak menolak atau mencabut keanggotaan jika melanggar aturan.</p>
+                                                        <p>Syarat & ketentuan dapat berubah sewaktu-waktu dengan pemberitahuan.</p>
+                                                        <p>Dengan mendaftar, member dianggap menyetujui semua aturan di atas.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <br>
+                        </center>                        
+                        
+                        <table width="100%" cellpadding="10">
+                            <tr>
+                                <td align="center">
+                                    <table cellpadding="8">
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" required>
+                                            </td>
+                                            <td>
+                                                🔒 Saya menyetujui <b>Syarat dan Ketentuan</b> yang berlaku
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Tombol -->
+                        <center>
+                            <table cellpadding="10">
+                                <tr>
+                                    <td>
+					<a href="selamatdatang.html">
+                                             <button type="submit">
+                                            	 <big><b>🚀 Daftar Sekarang!</b></big>
+                                             </button>
+					</a>
+					
+                                    </td>
+                                    <td>
+                                        <button type="reset">
+                                            <big><b>🔄 Reset Form</b></big>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <a href="login.html">
+                                            <button type="button">
+                                                <big><b>🔙 Kembali ke Login</b></big>
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <br><br>
+                    <hr>
+                    <p><b>💪 Gym Terbaik untuk Kesehatan Anda!</b></p>
+                    <p>📞 Hubungi: <b>0800-0000-0000</b> | 📧 Email: <b>gymkita@gmail.com</b></p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
